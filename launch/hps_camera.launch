@@ -1,0 +1,8 @@
+<launch>
+  <group ns="hps_camera">
+    <node type="ros_camera_client" pkg="hps_camera" name="ros_camera_client" required="true" output="screen">
+      <rosparam file="$(find hps_camera)/cfg/hps_camera.yaml">
+      </rosparam>
+    </node>
+  </group>
+</launch>
