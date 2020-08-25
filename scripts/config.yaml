@@ -1,0 +1,54 @@
+%YAML:1.2
+# space!space!space!,not Tab. 
+
+# param
+param:
+ transport_type: 0
+
+ ethernet_server_info: "192.168.0.10"
+
+
+
+ # hdr settings
+ hdr_mode : 2
+ quality_over_exposed : 500
+ quality_over_exposed_serious : 800
+ quality_weak : 120
+ quality_weak_serious : 80
+ simple_hdr_max_integration : 2000
+ simple_hdr_min_integration : 15
+ super_hdr_frame_number : 4
+ super_hdr_max_integration : 2000
+ hdr_disable_integration_time : 1000
+ # main loop 
+ loop_rate : 1
+ # kalman filter
+ filter_type : 1
+ kalman_K : 0.5
+ kalman_threshold : 200
+ num_check : 2
+
+ # smooth filter 0=disable ,1=aver,2=gauss
+ smooth_filter_type : 2 
+ smooth_filter_arg1 : 5
+
+ # mounting angle
+ mounting_angle_enable : false
+ mounting_angle_vertical : 0
+ mounting_angle_height : 0
+
+ # edge detection enable
+ edge_detection_enable : false
+ edge_detection_threshold_value : 1000
+
+# debug  true or false
+debug:
+ # debug enable
+ debug_enable: true
+#write by programer
+info:
+ version:
+
+
+
+
